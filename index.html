@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángeles Sosa | Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <span class="logo" onclick="scrollToSection('home')">
+                <img src="./assets/logo-portfolio-con-texto.png" alt="Logo portafolio">
+            </span>
+            
+            <input type="checkbox" id="menu-toggle" class="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <div class="header__info">
+                <ul>
+                    <li onclick="scrollToSection('about')">Sobre mí</li>
+                    <li onclick="scrollToSection('proyectos')">Mis Proyectos</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-portfolio-container container">
+
+        <section id="home" class="home__page grid-dos-columnas">
+            <div class="presentacion">
+                <div class="message__bubble">
+                    <div class="message__text">¡Hola! Me llamo</div>
+                    <div class="triangle"></div>
+                </div>
+                <h1>Ángeles Sosa</h1>
+                <p>Soy estudiante de la Licenciatura en Desarrollo y Producción de Videojuegos en la Universidad
+                    Nacional de José C. Paz. Realizo proyectos independientes, pero sobre todo en conjunto con mi
+                    equipo de desarrollo de videojuegos llamado "La Vaca Espacial".
+                </p>
+            </div>
+            <div class="right__content">
+                <img src="./assets/piplup_foto_perfil.jpg" alt="Foto de perfil de Ángeles Sosa">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>
+                Me especializo en la parte artística de los videojuegos, creando assets y elementos visuales que 
+                enriquecen la experiencia del jugador. También me encuentro incursionando en la programación de 
+                videojuegos, aprendiendo a utilizar motores de desarrollo como Godot para dar vida a ideas y proyectos.
+            </p>
+            </div>
+        </section>
+
+        <section class="mitad-banner">
+            <p></p>
+            <h2></h2>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+            <p>
+                En este apartado se encuentran los proyectos realizados durante la cursada de Fundamentos de la 
+                Programación I. También se encuentran proyectos realizados en conjunto con el estudio "La Vaca Espacial".
+            </p>
+
+            <div class="gallery__categories">
+                <ul>
+                    <li class="filter-item active" data-filter="all">Todos</li>
+                    <li class="filter-item" data-filter="scratch">Scratch</li>
+                    <li class="filter-item" data-filter="rpg-maker">RPG Paper Maker</li>
+                    <li class="filter-item" data-filter="godot">Godot Engine</li>
+                    <li class="filter-item" data-filter="la-vaca-espacial">La Vaca Espacial</li>
+                </ul>
+            </div>
+
+            <div class="proyectos-grid">
+                
+                <div class="project__card scratch show">
+                    <img src="./assets/captura-scratch.png" alt="Miniatura Proyecto Scratch">
+                    <div class="overlay"></div>
+                    <div class="project__info">
+                        <h3>La Cena de Patricio</h3>
+                        <p>Pequeño proyecto realizado en Scratch, donde el objetivo es ayudar a Patricio a conseguir su cena evitando los obstáculos que se le presentan.</p>
+                        <a href="https://scratch.mit.edu/projects/1293305337" class="btn-jugar" target="_blank">Jugar</a>
+                    </div>
+                </div>
+
+                <div class="project__card rpg-maker show">
+                    <img src="./assets/captura-cynthia.png" alt="Miniatura Proyecto RPG Paper Maker">
+                    <div class="overlay"></div>
+                    <div class="project__info">
+                        <h3>CYNTHIA</h3>
+                        <p>Videojuego de tipo RPG desarrollado en RPG PaperMaker, donde el objetivo es ayudar a Cynthia a escapar de un mundo lleno de peligros y enemigos.</p>
+                        <a href="https://anshiiu.itch.io/cynthia" class="btn-jugar" target="_blank">Jugar</a>
+                    </div>
+                </div>
+
+                <div class="project__card godot show">
+                    <img src="./assets/captura-ody.png" alt="Miniatura Proyecto Ody">
+                    <div class="overlay"></div>
+                    <div class="project__info">
+                        <h3>Ody Don't Fall!</h3>
+                        <p>Plataformero en 3D desarrollado en Godot Engine, donde el objetivo es completar el pedestal de planetas para poder escapar del espacio hacia la tierra.</p>
+                        <a href="https://anshiiu.itch.io/ody-dont-fall" class="btn-jugar" target="_blank">Jugar</a>
+                    </div>
+                </div>
+
+                <div class="project__card la-vaca-espacial show">
+                    <img src="./assets/captura-kermes.png" alt="Miniatura Proyecto Kermés">
+                    <div class="overlay"></div>
+                    <div class="project__info">
+                        <h3>Kermés Melódica</h3>
+                        <p>Prototipo para la materia "Diseño Lúdico II". Juego de ritmo inspirado en una feria y los juegos que se pueden encontrar en ella.</p>
+                        <a href="https://luuchy.itch.io/kermesmelodica" class="btn-jugar" target="_blank">Jugar</a>
+                    </div>
+                </div>
+
+                <div class="project__card la-vaca-espacial show">
+                    <img src="./assets/captura-meowfia.png" alt="Miniatura Proyecto Kermés">
+                    <div class="overlay"></div>
+                    <div class="project__info">
+                        <h3>Meowfia</h3>
+                        <p>Juego de exploración y misterio desarrollado en Godot, acompañas a un gato a ganarse la confianza de la mafia gatuna para salir de la pobreza y obtener beneficios en base a los recados cumplidos.</p>
+                        <a href="https://senshuro.itch.io/meowfia" class="btn-jugar" target="_blank">Jugar</a>
+                    </div>
+                </div>
+
+                <div class="project__card la-vaca-espacial show">
+                    <img src="./assets/captura-wisp.png" alt="Miniatura Proyecto Kermés">
+                    <div class="overlay"></div>
+                    <div class="project__info">
+                        <h3>Wisp</h3>
+                        <p>Juego desarrollado para móviles en Godot. WISP es un juego de plataformas en caída vertical donde el objetivo es pelear con los monstruos para liberar a su padre del mal.</p>
+                        <a href="https://luuchy.itch.io/wisp" class="btn-jugar" target="_blank">Jugar</a>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="social__media">
+            <h3>Redes sociales</h3>
+            <div class="social__mediaIcons">
+                <a href="https://anshiiu.itch.io/" target="_blank" aria-label="Ir a Itch.io">
+                    <img src="./assets/itch-io-svg.svg" alt="Itch.io" class="ico-red-social">
+                </a>
+                <a href="https://www.instagram.com/lavacaespacial.studio/" target="_blank" aria-label="Ir a Instagram">
+                    <img src="./assets/ig-svg.svg" alt="Instagram" class="ico-red-social">
+                </a>
+                <a href="https://www.linkedin.com/in/angeles-sosa-9044032b5/" target="_blank" aria-label="Ir a LinkedIn">
+                    <img src="./assets/linkedin-svg.svg" alt="LinkedIn" class="ico-red-social">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
